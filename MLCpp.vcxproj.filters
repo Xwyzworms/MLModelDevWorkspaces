@@ -4,21 +4,13 @@
     <ClCompile Include="mainDriver.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="SimpleTorchLinReg.cpp">
-      <Filter>SimpleTorchLinreg</Filter>
+    <ClCompile Include="linreg.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Source Files">
       <UniqueIdentifier>{F23262D7-7A28-3657-BA8F-128552BB4444}</UniqueIdentifier>
     </Filter>
-    <Filter Include="SimpleTorchLinreg">
-      <UniqueIdentifier>{275bacfb-44a8-4211-8b18-1f19b1a2f801}</UniqueIdentifier>
-    </Filter>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="SimpleTorchLinReg.h">
-      <Filter>SimpleTorchLinreg</Filter>
-    </ClInclude>
   </ItemGroup>
 </Project>

@@ -58,7 +58,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>E:\Ngoding\libtorchDebug\libtorch\include;E:\Ngoding\libtorchDebug\libtorch\include\torch\csrc\api\include;E:\Ngoding\NVIDIA GPU COMPUTING\include;E:\Ngoding\Nvidia\NvToolsExt\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>E:\BelajarDataScience\MachineLearningWorkspaces\MLCpp\LinearRegression;E:\Ngoding\libtorchDebug\libtorch\include;E:\Ngoding\libtorchDebug\libtorch\include\torch\csrc\api\include;E:\Ngoding\NVIDIA GPU COMPUTING\include;E:\Ngoding\Nvidia\NvToolsExt\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
@@ -175,11 +175,10 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </ProjectReference>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="SimpleTorchLinReg.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="mainDriver.cpp" />
-    <ClCompile Include="SimpleTorchLinReg.cpp" />
+    <ClCompile Include="linreg.cpp" />
+    <ClCompile Include="mainDriver.cpp">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\Ngoding\libtorchDebug\libtorch\include;E:\Ngoding\libtorchDebug\libtorch\include\torch\csrc\api\include;E:\Ngoding\NVIDIA GPU COMPUTING\include;E:\Ngoding\Nvidia\NvToolsExt\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

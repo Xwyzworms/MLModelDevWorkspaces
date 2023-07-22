@@ -5,6 +5,11 @@ VisualStudioVersion = 17.5.33530.505
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MLCpp", "MLCpp.vcxproj", "{DC6D0254-4D09-4045-9F32-546A9DD9200F}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "linreg", "linreg", "{50C41EE7-AE2F-4CBF-BA9C-8C3C1D74BDE9}"
+	ProjectSection(SolutionItems) = preProject
+		linreg.h = linreg.h
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
